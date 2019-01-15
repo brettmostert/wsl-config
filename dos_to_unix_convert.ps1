@@ -1,0 +1,1 @@
+get-childitem -path . -filter '*.sh' -recurse | foreach-object {./tools/dos2unix.exe $_.Fullname}
